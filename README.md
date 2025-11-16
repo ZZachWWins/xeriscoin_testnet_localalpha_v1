@@ -41,3 +41,17 @@ Recent blocks (hashes, nonces, rewards):
 curl http://127.0.0.1:8081/blocks | jq '.[] | {slot: .slot, hash: (.hash | map(. | sprintf("%02x")) | join("") | .[0:16] + "..."), nonce: .nonce, reward: (.reward / 1e9 | floor)}' | head -5
 Stakes (your 1000 XRS validator):
 curl http://127.0.0.1:8081/stakes | jq 'map({pubkey: .pubkey[0:8] + "...", xrs: (.amount / 1e9 | floor)})'
+
+
+
+Stop & Cleanup
+Ctrl+C in the node terminal. Data persists in local-ledger.dat—delete for fresh start.
+Troubleshooting
+No blocks? Check RUST_LOG=debug and stake: curl /stakes. Port clash? lsof -i :8081 then kill PID. Slow mining? Local PoW is CPU-bound; testnet scales with GPUs. Build errors? cargo clean && cargo build --release.
+Technical Details
+Rust-based (Solana SDK compatible) with Tokio async runtime. PoH via SHA256 chaining, scrypt PoW (Params::new(10,1,1)), PoS via stake-weighted voting. Ledger stores blocks as Vec<Block> with Merkle roots. Metrics: /metrics endpoint for Prometheus.
+License & Patent
+MIT License for non-commercial use. Subject to patent claims in US Provisional #63/887,511. Do not redistribute modified versions without consent. By downloading/running, you agree to our Terms of Service.
+Get Involved
+Questions: zachary@xerisweb.com. Whitepaper: xerisweb.com/whitepaper.pdf. Join beta waitlist: /testnet-beta. Star on GitHub—help shape mainnet.
+Run it. Watch it mine. XerisCoin is here.
