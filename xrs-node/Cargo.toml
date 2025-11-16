@@ -1,0 +1,35 @@
+[package]
+name = "xrs-node"
+version = "0.1.1"
+edition = "2021"
+
+[dependencies]
+solana-sdk = "2.0"
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4"
+env_logger = "0.9"
+clap = { version = "4", features = ["derive"] }
+rs_merkle = "0.2"
+sha2 = "0.10"
+bincode = "1"
+base64 = "0.13"
+scrypt = "0.10"
+rand = "0.8"
+prometheus = "0.13"
+hex = "0.4"
+chrono = "0.4"
+num-traits = "0.2"
+rustls = "0.20"
+tokio-rustls = "0.23"
+spl-token = "4.0"
+
+[[bin]]
+name = "xrs-node"
+path = "src/main.rs"
+
+[[bin]]
+name = "keypair_gen"
+path = "src/bin/keypair_gen.rs"

@@ -1,0 +1,10 @@
+
+{
+  "total_supply": 700000000,
+  "pre_mined_treasury": 200000000,
+  "block_reward": 342.5,
+  "halving_interval": 730000,
+  "decimals": 9,
+  "scarcity_note": "Limited supply: 700M XRS, 200M treasury, 500M via PoW halving (342.5 XRS/block) for $50M market cap by 2025",
+  "treasury_address": "XerisTrustWallet"
+}
