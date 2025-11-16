@@ -55,3 +55,5 @@ MIT License for non-commercial use. Subject to patent claims in US Provisional #
 Get Involved
 Questions: zachary@xerisweb.com. Whitepaper: xerisweb.com/whitepaper.pdf. Join beta waitlist: /testnet-beta. Star on GitHub—help shape mainnet.
 Run it. Watch it mine. XerisCoin is here.
+
+By downloading, you agree to https://xerisweb.com/terms
