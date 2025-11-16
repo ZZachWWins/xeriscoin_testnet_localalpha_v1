@@ -45,7 +45,7 @@ curl http://127.0.0.1:8081/blocks | jq '.[] | {slot: .slot, hash: (.hash | map(.
 Stakes (your 1000 XRS validator):
 curl http://127.0.0.1:8081/stakes | jq 'map({pubkey: .pubkey[0:8] + "...", xrs: (.amount / 1e9 | floor)})'
 
-
+  
 
 Stop & Cleanup
 Ctrl+C in the node terminal. Data persists in local-ledger.dat—delete for fresh start.

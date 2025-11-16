@@ -1,0 +1,7 @@
+## Windows Quick Start
+1. Unzip to a folder (e.g., C:\XerisCoin).
+2. Double-click `start-local.bat` (or run in cmd: `cd C:\XerisCoin` then `start-local.bat`).
+3. It auto-gens `keypair.json`, starts node/miner, airdrops 1000 XRS.
+4. Interact: Run `submit_tx.bat` for TXs; browser to http://127.0.0.1:8081/blocks.
+- Requires: Windows 10+ (for curl; else PowerShell works). No admin needed.
+- Troubleshoot: If ports busy, kill via Task Manager (xrs-node.exe).

@@ -1,0 +1,12 @@
+Patent Pending Copyright © 2025 Xeris Web Co. All rights reserved.
+
+XERISCOIN LOCAL ALPHA v0.1.0 - PROPRIETARY SOFTWARE
+
+This is EXPERIMENTAL, LOCAL-ONLY software for testing XerisCoin's patent-pending triple consensus (PoH + PoW + PoS).
+- Runs ISOLATED on 127.0.0.1. No internet, P2P, or data sharing.
+- No real tokens/value. For internal feedback/bug reports only.
+- PROHIBITED: Reverse-engineering, public deployment, commercialization, or claiming prior art.
+- US Provisional Patent #63/887,511 covers core mechanics.
+- Contact: zachary@xerisweb.com for licensing.
+
+By using, you agree to these terms. See xerisweb.com/ip.
