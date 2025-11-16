@@ -15,7 +15,7 @@ Prerequisites
 Install Rust 1.75+ via rustup.rs. Verify: rustup update. Ensure curl is available (native on macOS/Linux).
 Installation
 Clone the repo:
-git clone https://github.com/yourusername/xrs-node.git
+git clone https://github.com/ZZachWWins/xeriscoin_testnet_localalpha_v1/edit/main/README.md
 cd xrs-node
 Build: cargo build --release
 (Pre-built binaries in Releases for macOS/Linux.)
